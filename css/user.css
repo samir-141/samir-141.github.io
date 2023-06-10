@@ -16,7 +16,6 @@ a {
   margin: 1em auto;
   width: 44.23em;
 }
-
 .card {
   background: #fff;
   border-radius: 0.3rem;
@@ -24,7 +23,44 @@ a {
   border: .1em solid rgba(0, 0, 0, 0.2);
   margin-bottom: 1em; 
 }
+footer
+{
+  margin: 1em auto;
+  width: 44.23em;
+  text-align: center;
+}
+footer>.conter>.comida
+{
+  width: 50%;
+  border: 0.1em solid rgba(0, 0, 0, 0.2);
+}
+footer>.conter>.comida>ul
+{
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+footer>.conter
+{
+  display: flex;
+  background: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+}
+footer>.conter>.comida>ul>li
+{
+  width: 90%;
+  font-style: none;
+  list-style: none;
+}
 
+footer>.conter>.comida>ul>li>img
+{
+  width: 70%;
+  height: 15vh;
+
+}
 .profile-user-page .img-user-profile {
 	margin: 0 auto;
   text-align: center; 
@@ -45,7 +81,7 @@ a {
   box-shadow: 0 0 .1em rgba(0, 0, 0, 0.35);
 }
 .profile-user-page button {
-	position: absolute;
+  margin-left: 25%;
   font-size: 13px;
   font-weight: bold;
   cursor: pointer;
@@ -57,12 +93,25 @@ a {
   border-radius: 0 .6em .6em 0;
   padding: .80em;
 }
-
+.profile-user-page #logoutButton 
+{
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 7em; 
+  background: #3498db;
+  border: 1px solid #2487c9;
+  color: #fff;
+  outline: none;
+  border-radius: 0 .6em .6em 0;
+  padding: .80em;
+}
 .profile-user-page button:hover {
   background: #51a7e0;
   transition: background .2s ease-in-out;
   border: 1px solid #2487c9;
 }
+
 .profile-user-page .user-profile-data, .profile-user-page .description-profile {
   text-align: center;
   padding: 0 1.5em; 
@@ -121,6 +170,8 @@ a {
   padding: .93em 0;
   color: #46494c; 
 }
+
+
 .profile-user-page .data-user li a strong, .profile-user-page .data-user li a span {
   font-weight: 600;
   line-height: 1; 
