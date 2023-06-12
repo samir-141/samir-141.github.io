@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +38,9 @@
       <p class="text--center">olvidaste tu contraseña? <a href="recuperar_contraseña.html">haz click aqui</a> <svg class="icon">
           <use xlink:href="#icon-arrow-right"></use>
         </svg></p>
+        <p class="text--center">solicita <a href="registro.html">haz click aqui</a> <svg class="icon">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg></p>
   
     </div>
   
@@ -56,13 +59,12 @@
         <script>
             document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Evitar el envío del formulario
-
+            
             // Obtener los valores del usuario y la contraseña ingresados
             var username = document.getElementById("login__username").value;
             var password = document.getElementById("login__password").value;
-
-            // Aquí puedes realizar la validación de usuario y contraseña
-            if (username === "123456" && password === "sam20") {
+var cod= "123456"            // Aquí puedes realizar la validación de usuario y contraseña
+            if (username === cod && password === "sam20") {
                 alert("Inicio de sesión exitoso");
                 // Aquí puedes redirigir a otra página o realizar alguna acción adicional
                 // Establecer una cookie de sesión
