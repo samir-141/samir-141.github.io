@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto1</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function copyCode() {
+            var codeElement = document.querySelector("code");
+            var textArea = document.createElement("textarea");
+            textArea.value = codeElement.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Código copiado al portapapeles.");
+        }
+        
+    </script>
+      <script src="https://kit.fontawesome.com/0528f1fa85.js" crossorigin="anonymous"></script>
+    <style>
+       body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-image: radial-gradient(circle at 50% 33.3%, #929189 0, #bebebc 8.33%, #9e9b96 16.67%, #444443 25%, #aaaaaa 33.33%, #77716c 41.67%, #3f3d3d 50%, #3a3736 58.33%, #333232 66.67%, #3b3a3a 75%, #222020 83.33%, #050505 91.67%, #272727a1 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        h1 {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            margin: 1em auto 0.5em auto;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        pre {
+          
+          
+            margin: .2em 10% .2em 10%;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+        
+            padding: 0;
+        }
+code
+{
+    display: block;
+    white-space: pre-wrap;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    
+}
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .lista {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 0;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+        
+        li:before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="img/header.png" class="logo">
+            </a>
+            <nav>
+                <a href="#VIDEO">VIDEO</a>
+                <a href="#MATERIALES">MATERIALES</a>
+                <a href="#CODIGO">CODIGO</a>
+         
+         
+            </nav>
+            <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+   <div class="container">
+        <h1 style="text-align: center;font-family: 'Roboto', sans-serif;color:white; margin: 1em auto .5em auto;">
+            <u><b>CARRO SEGUIDOR POR GESTOS DE LA MANO</b></u>
+        </h1>
+        <div class="row" id="VIDEO">
+            
+           
+               
+                    <iframe class="col-md-8 col-sm-12"  width="100" style="margin: auto;padding: .5em 2em .5em 2em; background-color: black;" height="500" src="https://www.youtube.com/embed/1430GGtAQm0?si=1PsA33BaFcm_-RW7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+
+            
+
+        </div>
+        <div class="row">
+            
+           
+            <div id="MATERIALES" class="col-md-12">
+                <div class="row" style="width: 80%; margin-left: 10%;">
+                    <div class="col-md-6" style="background-color: rgb(143, 137, 137);">
+                        <div style="width: 80%; margin-left: 10%; background-color: white ; padding: 1em; margin-bottom: .5em; margin-top: 0.5em;">
+                            <h1 class="lista">LISTA DE MATERIALES</h1>
+                        <ul>
+                            <li>Arduino Uno</li>
+                            <li>Servo motor SG90</li>
+                            <li>Sensor de ultrasonido HC-SR04</li>
+                            <li>Cables de puente</li>
+                            <li>Protoboard</li>
+                            <li>Resistencias (varias)</li>
+                            <li>Leds (varios colores)</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="background-color:  rgb(143, 137, 137);">
+                        <img src="img/proyecto/mapa1.png" style="width: 80%;height: 80%;margin-top: 10%; margin-left: 10%; " alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12">
+                
+                <div class="w3-code notranslate htmlHigh"  id="CODIGO">
+                    <pre >
+                        <button onclick="copyCode()" >Copiar Código</button>
+                        <code >
+                            /*
+                            Button
+                          
+                            Turns on and off a light emitting diode(LED) connected to digital pin 13,
+                            when pressing a pushbutton attached to pin 2.
+                          
+                            The circuit:
+                            - LED attached from pin 13 to ground through 220 ohm resistor
+                            - pushbutton attached to pin 2 from +5V
+                            - 10K resistor attached to pin 2 from ground
+                          
+                            - Note: on most Arduinos there is already an LED on the board
+                              attached to pin 13.
+                          
+                            created 2005
+                            by DojoDave <http://www.0j0.org>
+                            modified 30 Aug 2011
+                            by Tom Igoe
+                          
+                            This example code is in the public domain.
+                          
+                            https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button
+                          */
+                          
+                          // constants won't change. They're used here to set pin numbers:
+                          const int buttonPin = 2;  // the number of the pushbutton pin
+                          const int ledPin = 13;    // the number of the LED pin
+                          
+                          // variables will change:
+                          int buttonState = 0;  // variable for reading the pushbutton status
+                          
+                          void setup() {
+                            // initialize the LED pin as an output:
+                            pinMode(ledPin, OUTPUT);
+                            // initialize the pushbutton pin as an input:
+                            pinMode(buttonPin, INPUT);
+                          }
+                          
+                          void loop() {
+                            // read the state of the pushbutton value:
+                            buttonState = digitalRead(buttonPin);
+                          
+                            // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+                            if (buttonState == HIGH) {
+                              // turn LED on:
+                              digitalWrite(ledPin, HIGH);
+                            } else {
+                              // turn LED off:
+                              digitalWrite(ledPin, LOW);
+                            }
+                          }
+                        </code>
+                        </pre>
+                       
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
